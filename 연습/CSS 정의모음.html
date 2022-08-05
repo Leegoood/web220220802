@@ -1,0 +1,28 @@
+<!--                                CSS 기본 문법
+
+     h1                   {color:blue;                            font-size:12px;}
+selector(선택자)          Declaration(선언부)                     Declaration(선언부)
+                          property(속성) value(속성값)            property(속성)value(속성값)
+
+CSS 선택자 우선순위
+!important > 인라인 스타일 > 아이디 선택자 > 클래스/속성/가상 선택자 > 태그 선택자 > 전체 선택자
+
+css 삽입위치 우선순위
+
+1.<head> 요소안의 style 요소
+2.<style> 요소안의 @import 문
+3.<link> 요소로 연결된 CSS 파일
+4.<link> 요소로 연결한 CSS 파일 안의 @import 문
+5.최종 사용자가 연결한 CSS 파일
+6.브라우저의 기본 스타일시트
+예외적으로, 최종 사용자가 연결한 CSS 파일 안의 !important 규칙은 우선순위 1위다. 최종 사용자는 !important 규칙을 작성해서 웹사이트 디자이너가 만든 CSS 파일의 규칙을 무효화할 수 있다.
+여러 CSS파일이 같은 우선순위 위치에서 연결되고 삽입되어 있을 때는 연결/삽입 순서에 따라 우선 순위가 결정된다. 가장 마지막에 연결/삽입된 스타일시트가 앞의 스타일시트보다 우선순위가 높다.
+
+우선순위 전략
+
+우선순위를 최대한 단순하게 유지해야 한다는 것을 고려한다.
+
+연결하는 CSS 파일의 수를 최소화
+@import 문 사용을 자제
+선택자를 각 CSS 파일 안에서의 의도한 순서대로 정렬
+출처: https://webdir.tistory.com/338 [WEBDIR:티스토리] - !-->
