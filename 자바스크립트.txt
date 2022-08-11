@@ -1,0 +1,68 @@
+자바스크립트는 브라우져용 언어.
+자바와 자바스크립트는 다른 언어.
+어트리뷰트안에 작은따옴표 큰따옴표 바꿀수있음.
+ex)안에 큰따옴표, 바깥에 작은 따옴표 가능
+
+자바스크립트는 엘리먼트를 조작할 수 있다.
+필요한게 있으면 콘솔.로그로 조작할 수 있다.
+
+자바스크립트 주석은 // , 단축키 ctrl+/ 
+
+script-tag : 1.head 태그 내에서도 script 태그작성 가능
+             2.script 태그 내에 javascript 작성 가능
+             3. 여러개의 script 태그 가능, 위에서 부터 순서대로 실행됨.
+             4. 스크립트 태그의 위치는 어디든 가능.
+             5. 특별한 이유가 없으면 body종료태그 바로 위에 작성하는게 좋다.
+
+log : console.log("1");  console.log('1'); console.log(238384838);
+     console.log('안쪽에 큰 따옴표"쓰면 바깥에 작은따옴표');
+     console.log("안쪽에 작은 따옴표 '쓰면 바깥 큰 따옴표");
+     console.log("하나", "둘","셋","넷");
+
+statement :     let a, b, c;      // statement1 : 3개의 변수를 선언
+                 a = 5;           // statement2 : 변수 a 에 값5를 대입
+                 b = 6;           // statement3 : 변수 b에 값6을 대입
+                 c = a + b;       // statement4 : 변수 c에 a와 b를 더한 값 대입
+                 console.log(a, b, c);
+                                  // javacript에서 semicolon은 생략 가능
+                                  // 하지만 처음 배울 때에는 생략하지 않도록 습관들이기
+
+
+variable : 변수 : 값을 저장한 공간의 이름
+           변수 선언 : let 변수명 ;  
+           ex) let a ;  : 값 대입(할당, assign) : 변수명 =값;
+           대입값 확인 방법은 인터넷 f12 누르고 콘솔 눌러서 확인가능
+           let a; // 선언
+           a = 5; // 대입
+           let b = 3; // 선언, 대입
+           let c, d, e; // 여러 변수 선언
+           let f = 3, g = 4, h = 5; // 여러 변수 선언 값 대입
+           // 값은 이름의 변수를 여러번 선언할 수 없다.
+           // let a; //xxxx 안됨
+           //변수명 작성시 사용할 수 있는 문자
+           // 영문대소문자, 숫자, _,$ 
+           //숫자로 시작할 수 없음
+           //대소문자 구별함
+           // let your car; //xxxx 안됨
+           //변수명 작성 관습(convention)
+           //변수명이 어떤 값을 가지고 있는지 의미있게 작성
+           // 변수명이 여러단어 조합인 경우
+           //두번째 단어의 첫번째 글자만 대문자
+           // 나머지는 모두 소문자(lowerCamelCase)
+           // 비교 : UpperCamelCase(자바, 자바스크립트 클래스)
+           // 비교 : snake_case(sql)
+           // 비교 : kebab-case
+           let studentAge; //(lowerCamelCase)
+           let myBagSerialNumber;//(lowerCamelCase)
+
+const(= constant) : 코드 작성법 : const b = 7; //상수 (constant 변하지 않는 값)
+                                               // 상수는 선언과 동시에 값 대입
+                                               // 값을 변경할 수 없음(다른 값 대입xxx)
+                                               // b = 5; <-- 변경 불가 
+
+let과 var 차이 
+        //let :다시 선언할 수 없음, 블록 영역(block scope)
+        //var :다시 선언할 수 있음, 함수 영역(function scope)
+
+           
+
