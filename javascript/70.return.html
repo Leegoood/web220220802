@@ -17,43 +17,16 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script>
+        function myfunc1() {
+            console.log("함수가 어떤 일을 한다.....");
 
-        let a = 3;
-        a = 4;
-        console.log(a); // a 는 3값에서 4값으로 변경
-                        //배열(array)
-                        // 여러 값을 저장하는 자료형
-                        //배열 작성법 : []
-                        // 값의 순서가 있고, 값을 접근할 수 있는 index가 있음
-        let b = [];
-        b.push(3);
-        b.push(4);
-        b.push(5);
+            return 99;
+        }
 
+        let a = myfunc1();
+        let b = myfunc1();
+        console.log(a);
         console.log(b);
-        console.log(b[0]); // 배열 b의 0번 인덱스 값
-        console.log(b[2]); // 배열 b의 2번 인덱스 값
-
-        console.log("b의 length", b.length);
-
-        let c = [];
-        c.push("html");
-        c.push("css");
-        c.push("javascript");
-        c.push("java");
-        c.push("jsp");
-        c.push("spring");
-
-        console.log(c[5]); // c 배열 활용해서 "spring" 출력
-        console.log(c[3]); // c 배열 활용해서 "java" 출력
-        console.log("c의 length", c.length);
-
-
-
-
-
-
-
     </script>
 </body>
 
